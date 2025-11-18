@@ -1,13 +1,19 @@
 import React from 'react';
-import './styles/App.css';
+import Header from './components/dashboard/Header';
+import KpiSection from './components/dashboard/KpiSection';
+import './styles/dashboard.css';
 
 function App() {
-    return (
-        <div className="app">
-            <h1>Dashboard Huella de Carbono</h1>
-            <p>Análisis de emisiones globales de CO2</p>
-        </div>
-    );
+  return (
+    <div className="app">
+      <div className="main-content">
+        <Header />
+        <main className="dashboard-container">
+          <KpiSection />
+        </main>
+      </div>
+    </div>
+  );
 }
 
 export default App;
